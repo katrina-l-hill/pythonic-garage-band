@@ -1,6 +1,7 @@
 
 from unicodedata import name
 
+
 class Musician():
     def __init__(self, name):
         self.name = name

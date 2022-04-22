@@ -153,7 +153,7 @@ def test_to_list():
 #######################
 
 
-@pytest.fixture
+#@pytest.fixture
 def nirvana_data():
     return {
         "name": "Nirvana",
