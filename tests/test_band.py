@@ -57,35 +57,35 @@ def test_bassist_repr():
     assert actual == expected
 
 
-@pytest.mark.skip("todo")
+#@pytest.mark.skip("todo")
 def test_band_name():
     nirvana = Band("Nirvana", [])
 
     assert nirvana.name == "Nirvana"
 
 
-@pytest.mark.skip("todo")
+#@pytest.mark.skip("todo")
 def test_guitarist():
     jimi = Guitarist("Jimi Hendrix")
     assert jimi.name == "Jimi Hendrix"
     assert jimi.get_instrument() == "guitar"
 
 
-@pytest.mark.skip("todo")
+#@pytest.mark.skip("todo")
 def test_bassist():
     flea = Bassist("Flea")
     assert flea.name == "Flea"
     assert flea.get_instrument() == "bass"
 
 
-@pytest.mark.skip("todo")
+#@pytest.mark.skip("todo")
 def test_drummer():
     ginger = Drummer("Ginger Baker")
     assert ginger.name == "Ginger Baker"
     assert ginger.get_instrument() == "drums"
 
 
-@pytest.mark.skip("todo")
+#@pytest.mark.skip("todo")
 def test_instruments(one_band):
     instruments = ["guitar", "bass", "drums"]
     for i, member in enumerate(one_band.members):
@@ -131,7 +131,7 @@ def test_play_solos_for_whole_band(one_band):
     assert solos[2] == "rattle boom crash"
 
 
-@pytest.mark.skip("todo")
+#@pytest.mark.skip("todo")
 def test_class_tracks_instances():
     assert Band.to_list() == []
     the_nobodies = Band("The Nobodies", [])
@@ -139,7 +139,7 @@ def test_class_tracks_instances():
     assert Band.instances[0] == the_nobodies
 
 
-@pytest.mark.skip("todo")
+#@pytest.mark.skip("todo")
 def test_to_list():
     assert Band.to_list() == []
     the_nobodies = Band("The Nobodies", [])
