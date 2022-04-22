@@ -5,21 +5,16 @@ Author: Katrina Hill
 Links and Resources
 
 Setup
-.env requirements (where applicable)
+.venv requirements
 
-i.e.
+- Created and activated virtual environment
 
-    PORT - Port Number
-    DATABASE_URL - URL to the running Postgres instance/db
+Initialize/run the application
 
-How to initialize/run your application (where applicable)
-
-    e.g. python main.py
-
-How to use your library (where applicable)
+- Created __init__.py files in root and and tests folders
 
 Tests
 
-    How do you run tests?
-    Any tests of note?
-    Describe any tests that you did not complete, skipped, etc
+    How do you run tests? Ran "pytest" against class functions to check tests
+    Any tests of note? Nothing to note.
+    Describe any tests that you did not complete, skipped, etc. I was not able to complete 2 out of 3 fixture tests (one_band and clean).
