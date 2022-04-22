@@ -2,6 +2,7 @@
 from unicodedata import name
 
 
+
 class Musician():
     def __init__(self, name):
         self.name = name
@@ -45,9 +46,15 @@ class Drummer(Musician):
         return "rattle boom crash"
 
 class Band():
+    instances = []
     def __init__(self, name, members):
         self.name = name
         self.members = members
+        self.instances.append(self)
     def play_solos(self):
         for member in self.members:
             member.play_solo()
+
+    @classmethod
+    def to_list(cls):
+        return cls.instances
